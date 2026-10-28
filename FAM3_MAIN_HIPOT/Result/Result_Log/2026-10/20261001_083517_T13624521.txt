@@ -1,0 +1,40 @@
+2026/10/01 8:34:49
+[08:34:56] 
+System = ‘Ï“dˆ³ŽŽŒ±‹@_D(Main)  Ver : 0.10
+***************
+2026/10/01 8:34:56
+Temperature = 23.9
+Humidity = 45.5
+Operator = SIN AE JANG
+BAR = R4VE2O
+MSCode = F3CU04-1H/S08
+Serial = T13624521
+OrderNo = 2011321017
+XJNo = 
+TestItem = F3CU04-1H
+***************
+[08:34:56] BOX Open
+[08:35:01] TestDB Read OK
+[08:35:01] Test_Select : 32 Ready
+[08:35:01] Test_Select : 32 Start
+[08:35:01] Test_Select : 32 Test Wait
+3.8
+[ACW TEST 32] 1800 VAC, 2sec
+  Scanner 1 : LOW, OPEN, OPEN, OPEN
+  Scanner 2 : HIGH, OPEN, OPEN, OPEN
+  Scanner 3 : HIGH, OPEN, OPEN, OPEN
+  Current : 2.6294 mA
+PASS
+[08:35:05] Test_Select : 33 Ready
+[08:35:06] Test_Select : 33 Start
+[08:35:06] Test_Select : 33 Test Wait
+3.8
+[ACW TEST 33] 1800 VAC, 2sec
+  Scanner 1 : OPEN, OPEN, OPEN, OPEN
+  Scanner 2 : HIGH, OPEN, OPEN, OPEN
+  Scanner 3 : LOW, OPEN, OPEN, OPEN
+  Current : 0.9102 mA
+PASS
+[08:35:10] End
+TestTime = 14
+TotalTime = 21

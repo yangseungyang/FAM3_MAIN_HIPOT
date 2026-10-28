@@ -1,0 +1,14 @@
+# ・・・>
+# ・・・> Created by   <・・・
+# ・・・> 定? ： CSP Controller[NEWSC］ MS-CODE体系及び重要検査情報正?File <・・・
+# ・・・> File Name/Ver./Date ： [InitFileNEWSC.inf]/ Ver.0.00 / 12.05.30  <・・・
+# ・・・>
+# LogDirName         = Logフ?イル保存Dir名
+# TempQdtDirName     = QDT(一時フ?イル)保存用Directory名
+# Result1QdtDirName  = QDT(検査終了デ??)デ??保存用Directory名
+
+
+TempQdtDirName    = D:\NewSC Data\TEMP\
+Result1QdtDirName = D:\NewSC Data\RESULT1\
+LogDirName        = D:\Log\
+

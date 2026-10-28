@@ -1,0 +1,30 @@
+2026/10/20 17:24:11
+[17:24:18] 
+System = ‘Ï“dˆ³ŽŽŒ±‹@_D(Main)  Ver : 0.10
+***************
+2026/10/20 17:24:18
+Temperature = 24.6
+Humidity = 47.4
+Operator = YOUNG AE PARK
+BAR = R76O6S
+MSCode = F3XD64-3F
+Serial = T13A02875
+OrderNo = 2011335874
+XJNo = 
+TestItem = F3XD64
+***************
+[17:24:19] BOX Open
+[17:24:24] TestDB Read OK
+[17:24:24] Test_Select : 22 Ready
+[17:24:24] Test_Select : 22 Start
+[17:24:24] Test_Select : 22 Test Wait
+3.8
+[ACW TEST 22] 1800 VAC, 2sec
+  Scanner 1 : LOW, HIGH, HIGH, HIGH
+  Scanner 2 : HIGH, HIGH, HIGH, HIGH
+  Scanner 3 : HIGH, HIGH, HIGH, OPEN
+  Current : 0.4440 mA
+PASS
+[17:24:28] End
+TestTime = 10
+TotalTime = 15

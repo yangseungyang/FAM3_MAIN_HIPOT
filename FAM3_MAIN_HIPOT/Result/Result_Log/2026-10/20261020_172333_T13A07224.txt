@@ -1,0 +1,40 @@
+2026/10/20 17:23:08
+[17:23:14] 
+System = ‘Ï“dˆ³ŽŽŒ±‹@_D(Main)  Ver : 0.10
+***************
+2026/10/20 17:23:14
+Temperature = 24.6
+Humidity = 47.4
+Operator = YOUNG AE PARK
+BAR = R75KF4
+MSCode = F3CU04-1H/C32
+Serial = T13A07224
+OrderNo = 2011385572
+XJNo = 
+TestItem = F3CU04-1H
+***************
+[17:23:15] BOX Open
+[17:23:20] TestDB Read OK
+[17:23:20] Test_Select : 32 Ready
+[17:23:20] Test_Select : 32 Start
+[17:23:20] Test_Select : 32 Test Wait
+3.8
+[ACW TEST 32] 1800 VAC, 2sec
+  Scanner 1 : LOW, OPEN, OPEN, OPEN
+  Scanner 2 : HIGH, OPEN, OPEN, OPEN
+  Scanner 3 : HIGH, OPEN, OPEN, OPEN
+  Current : 2.6294 mA
+PASS
+[17:23:24] Test_Select : 33 Ready
+[17:23:25] Test_Select : 33 Start
+[17:23:25] Test_Select : 33 Test Wait
+3.8
+[ACW TEST 33] 1800 VAC, 2sec
+  Scanner 1 : OPEN, OPEN, OPEN, OPEN
+  Scanner 2 : HIGH, OPEN, OPEN, OPEN
+  Scanner 3 : LOW, OPEN, OPEN, OPEN
+  Current : 0.9128 mA
+PASS
+[17:23:29] End
+TestTime = 14
+TotalTime = 18

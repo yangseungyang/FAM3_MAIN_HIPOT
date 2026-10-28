@@ -1,0 +1,30 @@
+2026/10/20 17:21:47
+[17:21:54] 
+System = ‘Ï“dˆ³ŽŽŒ±‹@_D(Main)  Ver : 0.10
+***************
+2026/10/20 17:21:54
+Temperature = 24.6
+Humidity = 47.4
+Operator = YOUNG AE PARK
+BAR = R779G0
+MSCode = F3YD32-1P
+Serial = T13A20601
+OrderNo = 2011459053
+XJNo = 
+TestItem = F3YD32
+***************
+[17:21:55] BOX Open
+[17:22:00] TestDB Read OK
+[17:22:00] Test_Select : 22 Ready
+[17:22:00] Test_Select : 22 Start
+[17:22:00] Test_Select : 22 Test Wait
+3.8
+[ACW TEST 22] 1800 VAC, 2sec
+  Scanner 1 : LOW, HIGH, HIGH, HIGH
+  Scanner 2 : HIGH, HIGH, HIGH, HIGH
+  Scanner 3 : HIGH, HIGH, HIGH, OPEN
+  Current : 0.3913 mA
+PASS
+[17:22:04] End
+TestTime = 10
+TotalTime = 14

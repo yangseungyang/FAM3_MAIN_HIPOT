@@ -1,0 +1,18 @@
+﻿# �E�E�E>
+# �E�E�E> Created by S.W.BAEK 12.5.30  <�E�E�E
+# �E�E�E> Define�F �mNEWSC�n ����Prog�DMaster Revision File <�E�E�E
+# �E�E�E> File Name �F [InitProgVer.inf]
+# �E�E�E>
+#  Ver 0.00 / 2021.01.14 / NewSC���������� �˻���ġ �ű԰��� / LCM
+#  Ver 0.01 / 2021.05.04 / 차기생산System 대응 / CDH
+#  Ver 0.02 / 2021.05.27 / FX3-EX1 대응 / CDH
+#  Ver 0.03 / 2021.06.01 / 절연내전압 검사 조건 변경 & FX3-EP1 대응 / LCM
+#  Ver 0.04 / 2021.06.18 / XJET5.022 대응 / CDH
+#  Ver 0.05 / 2021.07.09 / EC7 NG 대응 / CDH
+#  Ver 0.06 / 2021.07.28 / FX3-EH0 대응 / CDH
+#  Ver 0.07 / 2022.03.16 / XJEP1.004 대응 / LCM
+#  Ver 0.08 / 2022.06.23 / FX3-EA1 대응   / LCM
+#  Ver 0.09 / 2022.12.06 / XJET5.023 대응 / LCM
+
+
+ProgramVer = Ver 0.09 / 2022.12.06

@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E09BB496-CE71-4758-BD76-FD439F94D291}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FAM3_MAIN_HIPOT.My.MyApplication</StartupObject>
+    <RootNamespace>FAM3_MAIN_HIPOT</RootNamespace>
+    <AssemblyName>FAM3_MAIN_HIPOT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FAM3_MAIN_HIPOT.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FAM3_MAIN_HIPOT.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommonCommunicationLibrary">
+      <HintPath>bin\CommonCommunicationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EtherComN">
+      <HintPath>..\..\..\..\..\..\..\Windows\SysWOW64\EtherComN.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa, Version=5.5.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Ivi.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="ivi.visa.interop, Version=5.5.0.0, Culture=neutral, PublicKeyToken=a128c98f1d7717c1, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Windows\assembly\GAC_64\Ivi.Visa.Interop\5.5.0.0__a128c98f1d7717c1\ivi.visa.interop.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.1.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common, Version=7.1.0.243, Culture=neutral, PublicKeyToken=4544464cdeaab541">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.NI4882, Version=7.1.0.273, Culture=neutral, PublicKeyToken=4544464cdeaab541">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\NationalInstruments.NI4882.dll</HintPath>
+    </Reference>
+    <Reference Include="Policy.5.11.Ivi.Visa.Interop">
+      <HintPath>bin\Release\Policy.5.11.Ivi.Visa.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="TmctlAPINet, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\TmctlAPINet.dll</HintPath>
+    </Reference>
+    <Reference Include="ToY_StopWatch, Version=1.0.3251.30071, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\ToY_StopWatch.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program\Class\cls101_ComRS232C.vb" />
+    <Compile Include="Program\Class\cls102_SignalTower.vb" />
+    <Compile Include="Program\Class\clsCommMain.vb" />
+    <Compile Include="Program\Class\cls080_F3LinkToLE.vb" />
+    <Compile Include="Program\Class\clsHiPot.vb" />
+    <Compile Include="Program\Class\clsNeptune.vb" />
+    <Compile Include="Program\frm500_MessagePopUp.designer.vb">
+      <DependentUpon>frm500_MessagePopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\frm500_MessagePopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\frmDateCK.designer.vb">
+      <DependentUpon>frmDateCK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\frmDateCK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\Class\cls010_MDB_Operation.vb" />
+    <Compile Include="Program\Class\cls012_File_Operation.vb" />
+    <Compile Include="Program\Class\cls013_TextFile_Operation.vb" />
+    <Compile Include="Program\Class\cls020_Drive_Control.vb" />
+    <Compile Include="Program\Class\cls100_PLASMA_Order.vb" />
+    <Compile Include="Program\Class\cls110_ServerConnect.vb" />
+    <Compile Include="Program\Class\clsTestDBSet.vb" />
+    <Compile Include="Program\Class\clsTos9300A.vb" />
+    <Compile Include="Program\frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program\frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Program\Model_Input.designer.vb">
+      <DependentUpon>Model_Input.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Model_Input.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Program\frm500_MessagePopUp.resx">
+      <DependentUpon>frm500_MessagePopUp.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\frmDateCK.resx">
+      <DependentUpon>frmDateCK.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Program\Model_Input.resx">
+      <DependentUpon>Model_Input.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{2A75196C-D9EB-4129-B803-931327F72D5C}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="BARCODELib">
+      <Guid>{D9347025-9612-11D1-9D75-00C04FCC8CDC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="BASICFORMATTEDIOLib">
+      <Guid>{709F7EC2-AB81-11D4-98E6-00108301CB39}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>12</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="JRO">
+      <Guid>{AC3B8B4C-B6CA-11D1-9F31-00C04FC29D52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Scripting">
+      <Guid>{420B2830-E718-11CF-893D-00A0C9054228}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VisaComLib">
+      <Guid>{DB8CBF00-D6D3-11D4-AA51-00A024EE30BD}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

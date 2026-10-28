@@ -1,0 +1,51 @@
+# Temperature      = 
+# Humidity         = 
+# Inspector        = 
+# Approver         = 
+# RegulationItem   = 
+# StationNO        = 
+# ModelName        = 
+# Option1Name      = 
+# Option2Name      = 
+
+
+Inspector = Park Hye young
+Approver = Lee Yong ho
+RegulationItem = KDxxxx
+StationNO = NESC001
+TOS9300No = AQ001513
+
+2AGodSlotNo = 1
+30AGodSlotNo = 2
+F5700ASerialNo = NotUsed
+
+ModelName = EA0
+ModelName = EA1
+ModelName = EA2
+ModelName = EA5
+ModelName = EA7
+ModelName = EA9
+ModelName = EC0
+ModelName = EC7
+ModelName = EH0
+ModelName = EH1
+ModelName = EH5
+ModelName = EM1
+ModelName = EP1
+ModelName = EP3
+ModelName = ER5
+ModelName = ET5
+ModelName = ES1
+ModelName = ESC
+ModelName = EX1
+
+
+ListBox2Name = 
+
+ListBox3Name = 
+
+ListBox4Name = 
+
+ListBox5Name = 
+
+ListBox6Name = 

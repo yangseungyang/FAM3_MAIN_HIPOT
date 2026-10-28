@@ -1,0 +1,40 @@
+ 
+[08:20:34] 
+System = 耐電圧試験機_D(Main)  Ver : 0.10
+***************
+2026/10/01 8:20:34
+Temperature = 23.9
+Humidity = 45.5
+Operator = SEN JA GU
+BAR = 
+MSCode = 
+Serial = 
+OrderNo = 
+XJNo = 
+TestItem = 
+***************
+[08:20:35] BOX Open
+[08:20:40] TestDB Read OK
+[08:20:40] Test_Select : 1 Ready
+[08:20:40] Test_Select : 1 Start
+[08:20:40] Test_Select : 1 Test Wait
+3.8
+10PinTest始業点検 PASS
+[08:20:44] Test_Select : 2 Ready
+[08:20:44] Test_Select : 2 Start
+[08:20:44] Test_Select : 2 Test Wait
+3.8
+10PinTest始業点検 PASS
+[08:20:48] Test_Select : 3 Ready
+[08:20:49] Test_Select : 3 Start
+[08:20:49] Test_Select : 3 Test Wait
+3.8
+10PinTest始業点検 PASS
+[08:20:53] Test_Select : 4 Ready
+[08:20:53] Test_Select : 4 Start
+[08:20:53] Test_Select : 4 Test Wait
+3.8
+10PinTest始業点検 PASS
+[08:20:57] End
+TestTime = 23
+TotalTime = 25

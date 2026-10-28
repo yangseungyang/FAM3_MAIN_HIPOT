@@ -117,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program\Class\cls101_ComRS232C.vb" />
+    <Compile Include="Program\Class\clsRouterLink.vb" />
     <Compile Include="Program\Class\cls102_SignalTower.vb" />
     <Compile Include="Program\Class\clsCommMain.vb" />
     <Compile Include="Program\Class\cls080_F3LinkToLE.vb" />

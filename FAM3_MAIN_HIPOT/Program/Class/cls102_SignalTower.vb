@@ -73,17 +73,23 @@
 
         If buzz1 = "ON" And buzz2 = "OFF" And flash = "OFF" Then
             Select Case color
-                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"
-                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"
-                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"
+                'Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"        'Ver0.11 YSH DEL
+                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"        'Ver0.11 YSH DEL
+                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"        'Ver0.11 YSH DEL
+                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
             End Select
         End If
 
         If buzz1 = "OFF" And buzz2 = "ON" And flash = "OFF" Then
             Select Case color
-                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"
-                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"
-                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"
+                'Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"        'Ver0.11 YSH DEL
+                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"        'Ver0.11 YSH DEL
+                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000100"        'Ver0.11 YSH DEL
+                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
             End Select
         End If
 
@@ -97,23 +103,30 @@
 
         If buzz1 = "ON" And buzz2 = "OFF" And flash = "ON" Then
             Select Case color
-                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,10000100"
-                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00100100"
-                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00001100"
+                'Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,10000100"        'Ver0.11 YSH DEL
+                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,10000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00100100"        'Ver0.11 YSH DEL
+                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00100010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00001100"        'Ver0.11 YSH DEL
+                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00001010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
             End Select
         End If
 
         If buzz1 = "OFF" And buzz2 = "ON" And flash = "ON" Then
             Select Case color
-                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,10000100"
-                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00100100"
-                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00001100"
+                'Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,10000100"        'Ver0.11 YSH DEL
+                Case "RED" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,10000010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00100100"        'Ver0.11 YSH DEL
+                Case "YELLOW" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00100010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
+                'Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00001100"        'Ver0.11 YSH DEL
+                Case "GREEN" : scmd = "01" & "BWRY" & FAM3Slot & "01" & ",008,00001010"        'Ver0.11 YSH ADD : 부저 Y206 → Y207 : 신규 설비 FD1-AIEC002_1 P3 에서 YC16 6번(Y206) 미배선, 7번(Y207) 시그널타워 배선 (A8 cls102 와 같음)
             End Select
         End If
 
         'Sound OFF ---------------------------------
         If color = "" And buzz1 = "OFF" And buzz2 = "OFF" And flash = "" Then
-            scmd = "01" & "BWRY" & FAM3Slot & "06" & ",002,00"
+            'scmd = "01" & "BWRY" & FAM3Slot & "06" & ",002,00"        'Ver0.11 YSH DEL
+            scmd = "01" & "BWRY" & FAM3Slot & "07" & ",002,00"        'Ver0.11 YSH ADD : 부저 끄기도 Y207~Y208 (A8 cls102 와 같음, FD1-AIEC002_1 P3)
         End If
 
         Call cLnk.F3PCLinkCommunication(scmd, rCmd)

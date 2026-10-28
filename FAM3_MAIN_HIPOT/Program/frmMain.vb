@@ -7,6 +7,7 @@
 'Memo       : FORM_NEWSC 절연 내전압 검사장치
 '             기타 기능에 맞춤
 'Issue      : 2021/08/23  Rev 0.00    Youngseo.Gweon       New Release
+'           : 2026/10/26  Rev 0.11    YSH                  바코드 분배 프로그램(Barcode_Router) END 회신, Box Picking 신규 설비 slot4 F3YD08-6A 대응   'Ver0.11 YSH ADD
 
 '==========================================================
 
@@ -32,7 +33,8 @@ Public Class frmMain
     'Private Const Version As String = "0.07"   '2025.03.28 Ver 0.07 KDH
     'Private Const Version As String = "0.08"   '2025.05.26 Ver 0.08 KDH
     'Private Const Version As String = "0.09"   '2025.05.28 Ver 0.09 KDH
-    Private Const Version As String = "0.10"   '2025.06.30 Ver 0.10 KDH
+    'Private Const Version As String = "0.10"   '2025.06.30 Ver 0.10 KDH      'Ver0.11 YSH DEL
+    Private Const Version As String = "0.11"   '2026.10.26 Ver 0.11 YSH       'Ver0.11 YSH ADD : Barcode_Router 연동 / 신규 설비 대응 (md Rev 3 5-5항, SystemSetting.mdb 0.11 레코드 추가)
     'Local ================================================
     Dim mAppPath As String = Mid(Application.StartupPath, 1, InStr(Application.StartupPath, "bin") - 1)
     Private EtherComN As New EtherComN.Dll
@@ -360,6 +362,8 @@ Public Class frmMain
 
         cBcd.PortClose()
 
+        Call clsRouterLink.ShowFront(Me)       'Ver0.11 YSH ADD : Barcode_Router 가 바코드를 보내면 이 창을 맨 앞으로 (md Rev 3 7-7항 / 구조설계 F3-04, Class\clsRouterLink.vb)
+
         Try
             TextBox_BarCode.Invoke(New COM_Recieve(AddressOf DataWriteProcess), New Object() {})
         Catch
@@ -369,6 +373,8 @@ Public Class frmMain
         End Try
 
         cBcd.PortSetup()
+
+        Call clsRouterLink.SendEnd(Me, cBcd)   'Ver0.11 YSH ADD : 검사 / 결과 지움 후 포트를 다시 열고 "END + CR" 을 Barcode_Router 로 회신 (md Rev 3 7-9항 / 구조설계 F3-03)
 
         RemoveHandler TextBox_BarCode.TextChanged, AddressOf TextBox_BarCode_TextChanged
 
@@ -1723,7 +1729,8 @@ Reserch1:
             If mCoating = True Then Hako_cmd = "00000001"
         End If
 
-        PLC_RUN("192.168.0.2", "01BWRI00001,008," & Hako_cmd)
+        'PLC_RUN("192.168.0.2", "01BWRI00001,008," & Hako_cmd)        'Ver0.11 YSH DEL
+        PLC_RUN("192.168.1.2", "01BWRY401,008," & Hako_cmd)          'Ver0.11 YSH ADD : 신규 설비 Cover/삼색등 PLC slot4 F3YD08-6A Y00401~408 직접 출력 (Single=Y401, Double=Y402, 코팅 Single=Y407, 코팅 Double=Y408) (md 5-3항, Rev 2 6-3-1 / 구조설계 F3-07 / FD1-AIEC002_1)
 
         'PPT ==============================================================
         cADO = New cls010_MDB_Operation
@@ -1767,7 +1774,8 @@ Reserch1:
     End Sub
     Private Sub BoxPickingRelayReset()
 
-        PLC_RUN("192.168.0.2", "01BWRI00001,008,00000000")
+        'PLC_RUN("192.168.0.2", "01BWRI00001,008,00000000")          'Ver0.11 YSH DEL
+        PLC_RUN("192.168.1.2", "01BWRY401,008,00000000")            'Ver0.11 YSH ADD : Box Picking 소등도 slot4 F3YD08-6A 로 (md 5-3항 / 구조설계 F3-08)
 
     End Sub
 
